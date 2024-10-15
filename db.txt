@@ -1,0 +1,14 @@
+id              BIGINT            PRIMARY_KEY         AUTO_INCREMENT
+title           VARCHAR(255)      NOTNULL
+author          VARCHAR(255)      NOTNULL
+genre           VARCHAR(100)      NULL
+publication_year YEAR              NULL
+isbn            CHAR(13)          NOT_NULL            UNIQUE
+available       BOOLEAN           NOTNULL             DEFAULT(true)
+shelf_location  VARCHAR(50)       NULL
+borrower_id     BIGINT            NULL
+borrow_date     DATE              NULL
+return_date     DATE              NULL
+pages           SMALLINT          NULL
+language        VARCHAR(50)       NULL
+summary         TEXT              NULL
